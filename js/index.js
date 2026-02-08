@@ -26,7 +26,37 @@ const boolean = true || false;
 
 const nulled = null; // це рукотворне значення
 
-const undefined = undefined; // це визначення JS коли він пішов чось шукати і не найшов
+const undefined1 = "undefined"; // це визначення JS коли він пішов чось шукати і не найшов
 
 
 console.log (typeof name); //визначає тип змінної
+
+
+// Взаємодія з користувачами(методи та властивості)
+// Методи = дії
+console.log("Artem");
+// Властивості =Те що притаманно(характеристика)
+console.log("Artem".length)
+
+// alert("Ви вийграли в лотерею. Вітаємо");
+
+// prompt("Дайте оцінку нашому сайту");
+
+const grade = prompt("Дайте оцінку нашому сайту");
+console.log(grade)
+
+if (grade < 5) {
+   alert("Ти поганий") 
+} else {
+    alert("Ти красавчік")
+}
+
+console.log(grade.length)
+
+const choise = confirm("Ви впевнені що хочете купити цей товар?")
+console.log(choise); //true aбо false
+if (choise == true) {
+    alert("Ok")
+} else {
+    alert("OwO")
+}
