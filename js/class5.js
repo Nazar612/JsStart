@@ -1,0 +1,1 @@
+const string = "sdfasd'k[oiadsp[-asdlfh1234"; 

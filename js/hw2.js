@@ -60,10 +60,9 @@ console.log(sqrtNumber);
 
 
 const integer = 42;
-const convertedInt = toString(integer)
+const convertedInt = integer.toString();
 console.log(convertedInt);
 
 const stringNumber = "256";
 const convertedString = parseInt(stringNumber)
 console.log(convertedString);
-
