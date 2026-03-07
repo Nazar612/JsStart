@@ -2,7 +2,7 @@
 const strokeText1 = prompt("Введіть щось");
 const strokeText2 = prompt("Введіть ще щось");
 
-if (strokeText1.length > 0 && strokeText2 > 0) {
+if (strokeText1.length > 0 && strokeText2.length > 0) {
     alert("Обидва поля заповнені")
 } else {
     alert("Не всі поля заповнені")
