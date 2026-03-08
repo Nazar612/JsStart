@@ -60,3 +60,5 @@ if (choise == true) {
 } else {
     alert("OwO")
 }
+
+
