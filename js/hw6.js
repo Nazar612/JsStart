@@ -48,10 +48,9 @@ console.log(" Завдання 3 завершено")
 // }
 
 const n1 = 5;
-const answer = 0;
 let result = 0;
 
-while(n1 > answer) {
+while(n1 > 0) {
     result += 1;
     if(result >= n1) {
         break;
