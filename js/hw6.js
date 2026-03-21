@@ -49,7 +49,7 @@ console.log(" Завдання 3 завершено")
 
 const n1 = 5;
 const answer = 0;
-let result = 1;
+let result = 0;
 
 while(n1 > answer) {
     result += 1;

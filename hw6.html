@@ -5,7 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .block {
+        width: 500px;
+        height: 300px;
+        background-color: white;
+        display: flex;
+        align-items:center;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        border-color: magenta;
+        border-width: 5px;
+        border-style:groove;
+    }
+
+    .block-p {
+        margin: 0 auto;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 32px;
+        
+    }
+</style>
 <body>
     <script src="js/hw6.js"></script>
+    <div class="block">
+        <p class="block-p">Завдання виконано =)</p>
+    </div>
 </body>
 </html>
