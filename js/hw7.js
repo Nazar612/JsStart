@@ -78,6 +78,6 @@ for (i = 0; i < massive7.length; i++) {
     if (counter % 2 != 0) {
         continue;
     }
-    console.log(counter)
+    console.log(counter);
 }
 
