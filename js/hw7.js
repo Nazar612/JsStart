@@ -18,7 +18,7 @@ console.log(strMassive);
 
 const massive3 = [35, 25, 10];
 let summe = 0;
-for(i = 0; i < massive3.length; i++) {
+for(let i = 0; i < massive3.length; i++) {
     summe += massive3[i];
 }
 console.log(summe);
@@ -30,7 +30,7 @@ const massive4 = [];
 while (massive4.length < 4) {
     massive4.push(Math.round(Math.random() * 50));
 }
-for(i = 0; i < massive4.length; i++) {
+for(let i = 0; i < massive4.length; i++) {
     console.log(massive4[i]);
 }
 
@@ -38,7 +38,7 @@ for(i = 0; i < massive4.length; i++) {
 //Створити масив із 5-ти рядків. Вивести на екран кожен рядокз масиву, який містить більше 5-ти символів.
 
 const massive5 = ["ooooooo", "aaa", "iiiiii", "bbbbb", "c"];
-for (i = 0; i < massive5.length; i++) {
+for (let i = 0; i < massive5.length; i++) {
     const counter = massive5[i];
     if (counter.length < 5) {
         continue;
@@ -57,7 +57,7 @@ while (massive6.length < 10) {
 console.log(massive6);
 max = massive6[1];
 
-for(i = 0; i < massive6.length; i++){
+for(let i = 0; i < massive6.length; i++){
     const element = massive6[i];
     if (element > max) {
         max = element;
@@ -73,7 +73,7 @@ while (massive7.length < 10) {
     massive7.push(Math.round(Math.random() * 100));
 }
 
-for (i = 0; i < massive7.length; i++) {
+for (let i = 0; i < massive7.length; i++) {
     const counter = massive7[i];
     if (counter % 2 != 0) {
         continue;
