@@ -25,14 +25,16 @@ const cards = [
     "Карточка-4",
     "Карточка-5",
 ];
-
+//Видалення
 const cardToRemove = cards.indexOf("Карточка-3");
 const removeCart = cards.splice(cardToRemove, cardToRemove -1)
 console.log(cards)
 
+//Додавання
 cards.push("Карточка-6");
 console.log(cards);
 
+//Оновлення
 const cardToUpdate = cards.indexOf("Карточка-4");
 const cardUpdate = cards.splice(cardToUpdate, cardToUpdate -1, "Оновлена Карточка-4");
 console.log(cards)
