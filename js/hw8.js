@@ -3,17 +3,18 @@
 // 👉 Спочатку через for
 // 👉 Потім через join()
 
-// const friends = ["Mango", "Poly", "Kiwi", "Ajax"];
-// let string = "";
-// for( let i = 0; i < friends.length; i++) {
-//     const counter = friends[i];
-// }
-// console.log()
+const friends = ["Mango", "Poly", "Kiwi", "Ajax"];
+let string = "";
+for( let i = 0; i < friends.length; i++) {
+    const counter = ` ${friends[i]}`;
+    string += counter; 
+}
+console.log(string.trim());
 //Я не знаю як це через for зробити 
 
-const friends = ["Mango", "Poly", "Kiwi", "Ajax"];
-let string = friends.join()
-console.log(string);
+// const friends = ["Mango", "Poly", "Kiwi", "Ajax"];
+// let string = friends.join()
+// console.log(string);
 
 //Завдання 2
 // Працюємо з колекцією карток в trello. Метод splice() (можна використати інші методи)
