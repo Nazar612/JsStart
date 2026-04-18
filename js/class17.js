@@ -72,9 +72,6 @@ isPangram("Pack my box with five dozen liquor jugs.")
 
 function calculator(number1, signe, number2) {
     console.log(number1, signe, number2)
-    // if (signe === "/") {
-    //     return number1 / number2;
-    // } 
     switch( signe ) {
         case "/": 
         return number1 / number2;
