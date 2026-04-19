@@ -80,3 +80,20 @@ function repeatMessage(times, messageCreator) {
 }
 
 repeatMessage(5, message);
+
+
+const moviesMassive = ["film1", "film2" ,"m3"]
+
+function kino(title, index) {
+  if(title.length < 3) {
+    console.log("Погане кіно " + title)
+  }
+}
+
+function processMovies(movies, action) {
+  for(let i = 0; i < movies.length; i++ ){
+    action(movies[i], i);
+  }
+}
+
+console.log(processMovies(moviesMassive, kino));
