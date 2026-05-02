@@ -9,15 +9,20 @@ const user = {
     hobby: "",
     premium: true,
 }
-const userCopy = {...user, mood:"happy"};
-userCopy.hobby = "SkyDiving";
-userCopy.premium = false;
+// const userCopy = {...user, mood:"happy"};
+user.hobby = "SkyDiving";
+user.premium = false;
+user.mood = "happy";
+console.log(user)
 
-const userCopyEntries = Object.entries(userCopy);
 
-for(const [keys, entries] of userCopyEntries) {
- console.log(keys, ":", entries);
+const userKeys = Object.keys(user);
+console.log(userKeys);
+
+for (const element of userKeys) {
+    console.log(element, user[element] )
 }
+
 console.log(" ")
 // Завдання 2
 
@@ -103,6 +108,30 @@ countTotalSalary(employersSalary);
 // Напиши функцію getAllPropValues(arr, prop), яка отримує масив об'єктів і ім'я властивості. Повертає масив значень певної властивості prop з кожного об'єкта в масиві.
 
 // function getAllPropValues(arr, prop) {
-
 // }
+const products = [
+  { name: 'Радар', price: 1300, quantity: 4 },
+  { name: 'Сканер', price: 2700, quantity: 3 },
+  { name: 'Дроїд', price: 400, quantity: 7 },
+  { name: 'Захоплення', price: 1200, quantity: 2 },
+];
+
+function getAllPropValues(arr, prop) {
+    const result = [];
+
+    for (const element of arr) {
+        if (typeof element[prop] !== "undefined") {
+            result.push(element[prop]);
+        }
+    }
+    return result
+
+}
+
+
+console.log(getAllPropValues(products, 'name')); // ['Радар', 'Сканер', 'Дроїд', 'Захоплення']
+
+console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
+
+console.log(getAllPropValues(products, 'category')); // []
 
