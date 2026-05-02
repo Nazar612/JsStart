@@ -8,6 +8,7 @@ const book = {
 for(const key in book) {
     delete book[key]
 }
+console.log(book)
 
 const corworker = {
     Artem: -9999,
