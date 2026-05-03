@@ -135,3 +135,20 @@ console.log(getAllPropValues(products, 'quantity')); // [4, 3, 7, 2]
 
 console.log(getAllPropValues(products, 'category')); // []
 
+
+//Завдання 6
+
+//Напиши функцію calculateTotalPrice(allProdcuts, productName), яка отримує масив об'єктів та ім'я продукту (значення властивості name). Повертає загальну вартість продукту (ціна * кількість).
+
+// Викличи функції для перевірки працездатності твоєї реалізації.
+
+function calculateTotalPrice(allProdcuts, productsName, price, quantity) {
+    let total = 0;
+    for (const element of allProdcuts) {
+        if(element[productsName]) {
+            console.log(total = element[price] * element[quantity]);
+        }
+    }
+}
+
+calculateTotalPrice(products, "name", "price", "quantity")
