@@ -151,4 +151,18 @@ function calculateTotalPrice(allProdcuts, productsName, price, quantity) {
     }
 }
 
-calculateTotalPrice(products, "name", "price", "quantity")
+// calculateTotalPrice(products, "name", "price", "quantity")
+
+function calculateTotalPrice2(allProdcuts, productName) {
+    let total = 0;
+    for (const element of allProdcuts) {
+        if(productName === element.name) {
+            total = element.quantity * element.price;
+        }
+    }
+    return total
+}
+
+
+console.log(calculateTotalPrice2(products, "Сканер"));
+
