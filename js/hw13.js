@@ -98,6 +98,7 @@
  * Типів транзацкій всього два.
  * Можна покласти або зняти гроші з рахунку.
  */
+
 const Transaction = {
   DEPOSIT: 'deposit',
   WITHDRAW: 'withdraw',
@@ -192,14 +193,15 @@ const account = {
     return typeAllMoney;
   },
 };
-account.deposit(1000);
-account.deposit(1001);
-account.deposit(1002);
+account.deposit(10000);
+account.deposit(10000);
+account.deposit(10000);
 
-account.withdraw(1000);
-account.withdraw(1000);
-account.withdraw(1000);
-console.log(account.balance);
+account.withdraw(2222);
+account.withdraw(3333);
+account.withdraw(4444);
+
+
 console.log(account.transactions);
 console.log(account.getTransactionDetails(3));
 console.log(account.getBalance());
