@@ -129,3 +129,13 @@ const getUserWithEmail2 = users.find((user) => user.email == "elmahead@omatom.co
 
 console.log(getUserWithEmail1); // {об'єкт користувача Sheree Anthony}
 console.log(getUserWithEmail2); // {об'єкт користувача Elma Head}
+
+
+
+
+
+// Отримати масив імен всіх користувачів (поле name).
+const getUserNames2 = (items) => {
+  return items.map((user) => user.name);
+}
+console.log(getUserNames2(users));
