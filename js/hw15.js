@@ -120,10 +120,11 @@ console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sher
 // Масив імен (поле name) людей, відсортованих в залежності від кількості їх друзів (поле friends)
 
 const getNamesSortedByFriendsCount = users => {
-  return users.sort((a, b) => {
-   b.friends.length - a.friends.length
+  return [...users].sort((a, b) => {
+  return a.friends.length - b.friends.length
   }).map((user) => user.name)
 };
+
 //----------------
 console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
@@ -133,8 +134,22 @@ console.log(getNamesSortedByFriendsCount(users));
 
 // Отримати масив всіх умінь всіх користувачів (поле skills), при цьому не має бути повторюваних умінь і вони повинні бути відсортовані в алфавітному порядку.
 
-const getSortedUniqueSkills = users => {
-};
+const getSortedUniqueSkills = (users) => {
+  let unique = []
+  users.map((user) => {
+    user.skills.forEach((skill) => {
+      if (!unique.includes(skill)) {
+        unique.push(skill)
+      }
+    })
+  })
+  return unique.sort()
+}
 
-console.log(getSortedUniqueSkills(users));
+console.log(getSortedUniqueSkills(users))
+
 // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+// const filter = unique.filter((skill) => {
+//   console.log(skill)
+// })
+// console.log()
