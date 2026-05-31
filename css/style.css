@@ -11,3 +11,7 @@ a {
 ol, ul {
   list-style: none;
 }
+
+.body_title {
+  font-family: 'Courier New', Courier, monospace;
+};
