@@ -11,7 +11,13 @@ a {
 ol, ul {
   list-style: none;
 }
+body {
+  height: 5000px;
+}
+  .class36_list_li {
+    margin-bottom: 10px;
+  }
 
-.body_title {
-  font-family: 'Courier New', Courier, monospace;
-};
+  .tanchiki_li {
+    margin-bottom: 10px;
+  }
