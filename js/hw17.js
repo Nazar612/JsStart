@@ -71,4 +71,4 @@ const buttonIncrementEvents = elements.increment.addEventListener("click", (e) =
         counter += 1;
         elements.value.textContent = counter;
     }
-})
+});

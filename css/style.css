@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 a {
@@ -21,3 +22,15 @@ body {
   .tanchiki_li {
     margin-bottom: 10px;
   }
+
+  .veryNiceCursor {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+
