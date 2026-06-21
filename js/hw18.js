@@ -3,7 +3,8 @@ const elements = {
     name_input: document.querySelector("#name-input"),
     name_output: document.querySelector("#name-output"),
     validation_input: document.querySelector("#validation-input"),
-    font_size_control: document.querySelector("#font-size-control")
+    font_size_control: document.querySelector("#font-size-control"),
+    text: document.querySelector("#text"),
 };
 
 function change(e) {
@@ -21,7 +22,7 @@ if(e.target.defaultValue === "green") {
 }
 };
 elements.form.addEventListener("change", change);
-
+//change працює з чекбоксами та радіо кнопками
 elements.name_input.addEventListener("blur", (e) => {
     const eventTargetValue = e.target.value
      elements.name_output.textContent = eventTargetValue; 
@@ -39,6 +40,6 @@ elements.validation_input.addEventListener("blur", (e)=> {
     }
 });
 
-// // elements.font_size_control.addEventListener("change", (e)=> {
-// //     console.log(e);
-// })
+elements.font_size_control.addEventListener("input", (e)=> {
+    elements.text.style.fontSize = e.target.value + "px"
+})
