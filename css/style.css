@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  cursor: none;
+  /* cursor: none; */
 }
 
 a {
@@ -18,10 +18,20 @@ body {
   .class36_list_li {
     margin-bottom: 10px;
   }
-
+.square {
+    height: 100px;
+    width: 300px;
+    background-color: violet;
+  }
   .tanchiki_li {
     margin-bottom: 10px;
   }
+
+  #validation-input {
+
+  border: 3px solid #bdbdbd;
+
+}
 
   .veryNiceCursor {
     height: 20px;
@@ -31,6 +41,5 @@ body {
     top: 0;
     transform: translate(-50%, -50%);
     pointer-events: none;
-  }
-
+  };
 
